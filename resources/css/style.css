@@ -1,0 +1,141 @@
+/* =========== RESETS =========== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========== GENERAL =========== */
+
+body {
+    background-color: #e4e4e4;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #555555;
+}
+
+a:hover, a:active {
+    color: #ccafaf;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* =========== HEADER =========== */
+
+.logo-nav {
+    width: 100%;
+    background: #ffde7d;
+    box-shadow: 0 0 1px #979797;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}
+
+/* *** Logo *** */
+
+.logo {
+    margin-left: 1%;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+/* *** Navigation *** */
+
+#nav-bar {
+    margin-right: 1%;
+}
+
+#nav-bar a {
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    color: #000000;
+    font-size: 1rem;
+    margin: 0 10px;
+    padding-bottom: 3px;
+    transition: border-bottom .2s;
+    -webkit-transition: border-bottom .2s;
+    -moz-transition: border-bottom .2s;
+    -ms-transition: border-bottom .2s;
+    -o-transition: border-bottom .2s;
+}
+
+#nav-bar a:hover {
+    border-bottom: 2px solid #f6416c;
+}
+
+#nav-bar a:last-child {
+    background-color: rgb(246, 65, 108);
+    color: rgb(250, 250, 250);
+    padding: 21px 15px;
+    transition: background-color .2s, color .2s;
+    -webkit-transition: background-color .2s, color .2s;
+    -moz-transition: background-color .2s, color .2s;
+    -ms-transition: background-color .2s, color .2s;
+    -o-transition: background-color .2s, color .2s;
+}
+
+#nav-bar a:last-child:hover {
+    background-color: rgba(246, 65, 108, .9);
+    color: #202020;
+}
+
+/* *** Heading *** */
+
+.heading {
+    /* margin-top: 60px; */
+    width: 100%;
+    position: relative;
+}
+
+.big-heading {
+    position: absolute;
+    left: 2%;
+    top: 30%;
+    width: 40%;
+    font-size: 4rem;
+    color: #131313;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.shoe {
+    color: #f6416c;
+}
+
+#header-img {
+   width: 100vw;
+   height: 100vh;
+   /* margin-top: 20px; */
+}
+
+
+
+
+
+
+
