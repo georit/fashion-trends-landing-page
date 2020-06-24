@@ -267,7 +267,105 @@ a:active {
 /* *** Plans *** */
 
 .section-plans {
-    background-color: #f8f3d4;
+    background-color: #eeeeee;
 }
+
+.wrapper-plans {
+	display: flex;
+	flex direction: row;
+}
+
+.plan {
+  width: 30%;
+  margin: 0 2%;
+  background: #ffffff;
+  padding: 30px;
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.plan ul li {
+	list-style-type: none;
+	padding: 5px;
+}
+
+.plan ul li::before {
+	content: "\f00c";
+	color: #f6416c;
+  	font-family: "Font Awesome 5 free";
+  	font-size: 1rem;
+	margin-right: 10px;
+}
+
+.plan h3 {
+	color: #00b8a9;
+	margin-top: 20px;
+}
+
+#popular-plan {
+	color: #f6416c;
+}
+
+.plan-details {
+	margin: 40px 0 20px;
+	padding: 30px 10px;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.price {
+	font-size: 3rem;
+	font-weight: 100;
+	padding-top: 40px;
+}
+
+.small-text {
+	font-size: 1.5rem;
+	color: #f6416c;
+}
+
+.plan .btn {
+	width: 60%;
+	margin: 20px 20%;
+	height: 3rem;
+	font-size: 1rem;
+	color: #fff;
+	background-color: #00b8a9;
+	border: none;
+	border-radius: 50px;
+	-webkit-transition: background-color .2s;
+	-moz-transition: background-color .2s;
+	-ms-transition: background-color .2s;
+	-o-transition: background-color .2s;
+	transition: background-color .2s;
+}
+
+.plan .btn:hover,
+.plan .btn:active {
+	background-color: rgba(0, 184, 169, .7);
+}
+
+#premium {
+	background-color: #f6416c;
+	-webkit-transition: background-color .2s;
+	-moz-transition: background-color .2s;
+	-ms-transition: background-color .2s;
+	-o-transition: background-color .2s;
+	transition: background-color .2s;
+}
+
+#premium:hover,
+#premium:active {
+	background-color: rgba(246, 65, 108, .7);
+}
+
+.plan .sign-up {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+
 
 

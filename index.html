@@ -48,7 +48,7 @@
 
         <!-- *** Features *** -->
         <section class="section section-features" id="features">
-            <h2 class="section-heading">Quality, Affordable & Fast</h2>
+            <h2 class="section-heading">Quality, Affordable &amp; Fast</h2>
 
             <div class="features">
                 <div class="feature">
@@ -124,35 +124,35 @@
         <!-- *** Plans *** -->
         <section class="section section-plans" id="plans">
             <h2 class="section-heading">Our Plans</h2>
+			<div class="wrapper-plans">
             <div class="plan">
                 <h3>One-off</h3>
                 <p class="price">Rental fee</p>
-                <ul>
+                <ul class="plan-details">
                     <li>hassle-free</li>
                     <li>No recurring charges</li>
                     <li>Expedited shipping available at checkout</li>
                     <li>We'll place a hold on credit card for 75% of shoe cost</li>
                 </ul>
-                <button class="btn btn-sign-up"><a href="#" class="sign-up">Sign Up</a></button>
+                <button class="btn btn-sign-up"><a href="#sign-up" class="sign-up">Sign Up</a></button>
             </div>
             <div class="plan">
-                <h3>Premium</h3>
+                <h3 id="popular-plan">Premium</h3>
                 <p class="price">$85 / <span class="small-text">month</span></p>
-                <ul>
+                <ul class="plan-details">
                     <li>hassle-free</li>
                     <li>10% off rental fee</li>
                     <li>Limit 5 pairs a month</li>
-                    <li>Not eligible for shoes costing $500 &amp; up</li>
                     <li>Free 2 day shipping</li>
                     <li>Expedited shipping available at checkout</li>
                     <li>Check out max 2 pairs at once</li>
                 </ul>
-                <button class="btn btn-sign-up"><a href="#" class="sign-up">Sign Up</a></button>
+                <button class="btn btn-sign-up" id="premium"><a href="#sign-up" class="sign-up">Sign Up</a></button>
             </div>
             <div class="plan">
                 <h3>Chic!</h3>
                 <p class="price">$255 / <span class="small-text">month</span></p>
-                <ul>
+                <ul class="plan-details">
                     <li>hassle-free</li>
                     <li>Rent <span class="italic">any</span> shoe, no limits</li>
                     <li>50% off rental fee</li>
@@ -160,14 +160,15 @@
                     <li>Free overnight shipping</li>
                     <li>Check out max 5 pairs at once</li>
                 </ul>
-                <button class="btn btn-sign-up"><a href="#" class="sign-up">Sign Up</a></button>
+                <button class="btn btn-sign-up"><a href="#sign-up" class="sign-up">Sign Up</a></button>
             </div>
+			</div>
         </section>
 
         <!-- *** Sign Up *** -->
         <section class="section section-sign-up" id="sign-up">
             <h2 class="section-heading">Sign Up</h2>
-
+			<form action="#">
             <div class="col-50">
                 <h3>Billing Address</h3>
                 <div class="full-name">
@@ -247,6 +248,7 @@
             <div class="submit">
                 <input type="submit" value="Sign Up" class="btn">
             </div>
+		</form>
 
         </section>
 
@@ -259,10 +261,10 @@
 
 <footer>
     <div class="footer-nav">
-        <a href="#" id="nav-link">Features</a>
-        <a href="#" id="nav-link">Testimonies</a>
-        <a href="#" id="nav-link">Plans</a>
-        <a href="#" id="nav-link">Sign Up</a>
+        <a href="#features" id="nav-link">Features</a>
+        <a href="#testimonies" id="nav-link">Testimonies</a>
+        <a href="#plans" id="nav-link">Plans</a>
+        <a href="#sign-up" id="nav-link">Sign Up</a>
     </div>
 
     <div class="social-media">
