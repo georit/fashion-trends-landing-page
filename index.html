@@ -117,138 +117,109 @@
         <section class="section section-testimonies" id="testimonies">
             <h2 class="section-heading">What customers say about us</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/baqA9jhZRVs" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen class="yt-video"></iframe>
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                class="yt-video" id="video"></iframe>
         </section>
 
         <!-- *** Plans *** -->
         <section class="section section-plans" id="plans">
             <h2 class="section-heading">Our Plans</h2>
-			<div class="wrapper-plans">
-            <div class="plan">
-                <h3>One-off</h3>
-                <p class="price">Rental fee</p>
-                <ul class="plan-details">
-                    <li>hassle-free</li>
-                    <li>No recurring charges</li>
-                    <li>Expedited shipping available at checkout</li>
-                    <li>We'll place a hold on credit card for 75% of shoe cost</li>
-                </ul>
-                <button class="btn btn-sign-up"><a href="#sign-up" class="sign-up">Sign Up</a></button>
+            <div class="wrapper-plans">
+                <div class="plan">
+                    <h3>One-off</h3>
+                    <p class="price">Rental fee</p>
+                    <ul class="plan-details">
+                        <li>hassle-free</li>
+                        <li>No recurring charges</li>
+                        <li>Expedited shipping available at checkout</li>
+                        <li>We'll place a hold on credit card for 75% of shoe cost</li>
+                    </ul>
+                    <a href="#sign-up" class="sign-up btn btn-sign-up">Sign Up</a>
+                </div>
+                <div class="plan">
+                    <h3 id="popular-plan">Premium</h3>
+                    <p class="price">$85 <span class="small-text">/ month</span></p>
+                    <ul class="plan-details">
+                        <li>hassle-free</li>
+                        <li>10% off rental fee</li>
+                        <li>Limit 5 pairs a month</li>
+                        <li>Free 2 day shipping</li>
+                        <li>Expedited shipping available at checkout</li>
+                        <li>Check out max 2 pairs at once</li>
+                    </ul>
+                    <a href="#sign-up" class="sign-up btn btn-sign-up" id="premium">Sign Up</a>
+                </div>
+                <div class="plan">
+                    <h3>Chic!</h3>
+                    <p class="price">$255 <span class="small-text">/ month</span></p>
+                    <ul class="plan-details">
+                        <li>hassle-free</li>
+                        <li>Rent <span class="italic">any</span> shoe, no limits</li>
+                        <li>50% off rental fee</li>
+                        <li>Unlimited rentals</li>
+                        <li>Free overnight shipping</li>
+                        <li>Check out max 5 pairs at once</li>
+                    </ul>
+                    <a href="#sign-up" class="sign-up btn btn-sign-up">Sign Up</a>
+                </div>
             </div>
-            <div class="plan">
-                <h3 id="popular-plan">Premium</h3>
-                <p class="price">$85 / <span class="small-text">month</span></p>
-                <ul class="plan-details">
-                    <li>hassle-free</li>
-                    <li>10% off rental fee</li>
-                    <li>Limit 5 pairs a month</li>
-                    <li>Free 2 day shipping</li>
-                    <li>Expedited shipping available at checkout</li>
-                    <li>Check out max 2 pairs at once</li>
-                </ul>
-                <button class="btn btn-sign-up" id="premium"><a href="#sign-up" class="sign-up">Sign Up</a></button>
-            </div>
-            <div class="plan">
-                <h3>Chic!</h3>
-                <p class="price">$255 / <span class="small-text">month</span></p>
-                <ul class="plan-details">
-                    <li>hassle-free</li>
-                    <li>Rent <span class="italic">any</span> shoe, no limits</li>
-                    <li>50% off rental fee</li>
-                    <li>Unlimited rentals</li>
-                    <li>Free overnight shipping</li>
-                    <li>Check out max 5 pairs at once</li>
-                </ul>
-                <button class="btn btn-sign-up"><a href="#sign-up" class="sign-up">Sign Up</a></button>
-            </div>
-			</div>
         </section>
 
         <!-- *** Sign Up *** -->
         <section class="section section-sign-up" id="sign-up">
-            <h2 class="section-heading">Sign Up</h2>
-			<form action="#">
-            <div class="col-50">
-                <h3>Billing Address</h3>
-                <div class="full-name">
-                    <label for="fname">Full Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Mike P. Papaya">
+            <h2 class="section-heading">Create your account</h2>
+
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <div class="name">
+                    <label for="fullname">Full Name <span class="asterisk">&#42;</span></label>
+                    <input type="text" name="fullname" id="fullname" required>
                 </div>
 
                 <div class="email">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="mike@example.com">
+                    <label for="email">Email <span class="asterisk">&#42;</span></label>
+                    <input type="email" name="email" id="email" required>
                 </div>
 
-                <div class="address">
-                    <label for="adr">Address</label>
-                    <input type="text" id="adr" name="address" placeholder="123 E. 4th Street">
+                <div class="phone">
+                    <label for="phone">Phone Number <span class="asterisk">&#42;</span></label>
+                    <input type="tel" name="phone" id="phone" required>
                 </div>
 
-                <div class="city">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city" placeholder="Austin">
+                <div class="occupation">
+                    <label for="occupation">Occupation(<span class="italic">optional</span>)</label>
+                    <select name="occupation" id="occupation" required>
+                        <option value="select-option">Select an option</option>
+                        <option value="education">Education</option>
+                        <option value="it">IT</option>
+                        <option value="health-services">Health Services</option>
+                        <option value="finance">Finance</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="food-services">Food Services</option>
+                        <option value="civil-serivce">Civil Service</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
 
-                <div class="row">
-                    <div class="state">
-                        <label for="state">State</label>
-                        <input type="text" id="state" name="state" placeholder="TX">
-                    </div>
-                    <div class="zip">
-                        <label for="zip">Zip</label>
-                        <input type="text" id="zip" name="zip" placeholder="78001">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-50">
-                <h3>Payment</h3>
-
-                <label for="fname">Accepted Cards</label>
-                <div class="icon-container">
-                    <i class="fa fa-cc-visa" style="color:navy;"></i>
-                    <i class="fa fa-cc-amex" style="color:blue;"></i>
-                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                <div class="password">
+                    <label for="password">Password <span class="asterisk">&#42;</span></label>
+                    <input type="password" name="password" id="password" required>
                 </div>
 
-                <div class="card-name">
-                    <label for="cname">Name on Card</label>
-                    <input type="text" id="cname" name="cardname" placeholder="Mike Pamberi Papaya">
+                <div class="submit">
+                    <input type="submit" value="Create Account" id="submit">
                 </div>
 
-                <div class="card-number">
-                    <label for="ccnum">Credit card number</label>
-                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <div class="newsletter">
+                    <input type="checkbox" name="newsletter" id="newsletter" checked>
+                    <label for="newsletter">Sign me up for offers and newsletter!</label>
                 </div>
 
-                <div class="exp-month">
-                    <label for="expmonth">Exp Month</label>
-                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I accept the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.</label>
                 </div>
 
-                <div class="row">
-                    <div class="exp-year">
-                        <label for="expyear">Exp Year</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="2018">
-                    </div>
-                    <div class="cvv">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="352">
-                    </div>
-                </div>
-            </div>
-
-            <label>
-                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-            </label>
-
-            <div class="submit">
-                <input type="submit" value="Sign Up" class="btn">
-            </div>
-		</form>
+            </form>
 
         </section>
 
