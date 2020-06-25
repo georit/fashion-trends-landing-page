@@ -289,6 +289,7 @@ a:active {
   box-shadow: 0 0 10px #c7c7c7;
   font-size: 1rem;
   line-height: 1.2rem;
+  position: relative;
 }
 
 .plan:nth-child(2) {
@@ -332,11 +333,8 @@ a:active {
 }
 
 .plan .btn {
-  margin: 0 28%;
-  padding: 10px 10%;
-  height: 3rem;
+  padding: .8rem 2rem;
   font-size: 1.2rem;
-  text-align: center;
   cursor: pointer;
   color: #00b8a9;
   outline: none;
@@ -347,6 +345,14 @@ a:active {
   -moz-transition: background-color 0.2s, color 0.2s;
   -ms-transition: background-color 0.2s, color 0.2s;
   -o-transition: background-color 0.2s, color 0.2s;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .plan .btn:hover,
@@ -466,4 +472,48 @@ input[type=password] {
 
 .terms a {
 	color: #00b8a9;
+}
+
+/* *** Footer *** */
+
+footer {
+  background: #00b8a9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-nav {
+  margin-left: 1%;
+}
+
+.social-media {
+  margin-right: 1%;
+}
+
+.footer-nav a, .social-media a {
+  padding: 0 10px;
+  color: #747474;
+}
+
+.footer-nav a:hover, .social-media a:hover {
+  color: #949494;
+}
+
+#insta i:hover {
+  color: #8134af;
+}
+
+#snapchat i:hover {
+color: #fffc00;
+}
+
+#fb i:hover {
+color: #4267b3;
+}
+
+#tw i:hover {
+color: #08a0e9;
 }
