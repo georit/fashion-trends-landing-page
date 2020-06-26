@@ -1,0 +1,445 @@
+/* =========== MEDIA QUERIES =========== */
+
+/* *** Large screens minimum width 992px maximum width 1200px ***
+
+@media screen and (min-width: 992px) and (max-width: 1199.8px) {
+} */
+
+/* *** Medium screens minimum width 768px maximum width 992px *** */
+
+@media screen and (min-width: 768px) and (max-width: 991.8px) {
+  .section-heading {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  /* =========== HEADER =========== */
+
+  /* *** Heading *** */
+
+  .big-heading {
+    top: 20%;
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+
+  #header-img {
+    width: 100vw;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* =========== MAIN CONTENT =========== */
+
+  .section {
+    padding: 90px 5%;
+  }
+
+  /* *** Features *** */
+
+  .feat1::before, .feat2::before, .feat3::before {
+    font-size: 6rem;
+  }
+
+  .feature p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+
+  /* *** How it works *** */
+
+  .step {
+    font-size: 1.5rem;
+  }
+
+  .number {
+    font-size: 2rem;
+    width: 50px;
+  }
+
+  /* *** Plans *** */
+
+  .wrapper-plans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .plan {
+    width: 45%;
+    margin: 0 2% 35px 2%;
+  }
+
+  /* *** Creat an account *** */
+
+  #form {
+    padding: 40px;
+  }
+
+  /* *** Footer *** */
+
+  .footer-nav a,
+  .social-media a {
+      padding: 0 5px;
+      font-size: .9rem;
+  }
+}
+
+/* *** Small screens minimum width 576px and maximum width 768px *** */
+
+@media screen and (min-width: 576px) and (max-width: 767.8px) {
+  /* =========== GENERAL =========== */
+
+  body {
+    font-size: 14px;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /* =========== HEADER =========== */
+
+  /* *** Heading *** */
+
+  .heading {
+    width: 100%;
+    position: relative;
+  }
+
+  .big-heading {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  #header-img {
+    margin-top: 60px;
+    width: 100vw;
+    height: auto;
+  }
+
+  /* =========== MAIN CONTENT =========== */
+
+  .section {
+    padding: 80px 5%;
+  }
+
+  /* *** Features *** */
+
+  .feat1::before,
+  .feat2::before,
+  .feat3::before {
+    font-size: 4.5rem;
+  }
+
+  .feature p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* *** How it works *** */
+
+  .step {
+    margin: 50px 20%;
+    font-size: 1.3rem;
+  }
+
+  .number {
+    font-size: 2rem;
+    width: 50px;
+  }
+
+  /* *** Plans *** */
+
+  .wrapper-plans {
+    flex-wrap: wrap;
+  }
+
+  .plan {
+    width: 45%;
+    margin: 0 2% 35px 2%;
+  }
+
+  /* *** Creat an account *** */
+
+  #form {
+    margin: 10px auto;
+    padding: 50px;
+  }
+
+  .name,
+  .email,
+  .phone,
+  .occupation,
+  .password,
+  .submit {
+    margin: 20px auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+    width: 100%;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    text-indent: 10px;
+  }
+
+  #occupation {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    text-indent: 5px;
+  }
+
+  #submit {
+    font-size: 1.2rem;
+  }
+
+  .terms a {
+    color: #00b8a9;
+  }
+
+  /* *** Footer *** */
+
+  footer {
+    padding: 5px 0;
+  }
+
+  .footer-nav {
+    margin-left: 5%;
+  }
+
+  .social-media {
+    margin-right: 5%;
+  }
+
+  .footer-nav a,
+  .social-media a {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media i {
+    display: none;
+  }
+}
+
+/* *** Extra-small screens maximum width 576px *** */
+
+@media screen and (max-width: 575.8px) {
+  body {
+    font-size: 12px;
+  }
+
+  .section-heading {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  .section-heading::after {
+    height: 1px;
+    border-radius: 2px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 7.5px;
+  }
+
+  /* =========== HEADER =========== */
+
+  /* *** Heading *** */
+
+  .heading {
+    width: 100%;
+    position: relative;
+  }
+
+  .big-heading {
+    top: 30%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  #header-img {
+    width: 100vw;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  /* =========== MAIN CONTENT =========== */
+
+  .section {
+    width: 100%;
+    padding: 40px 3%;
+  }
+
+  /* *** Features *** */
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .feat1::before,
+  .feat2::before,
+  .feat3::before {
+    font-size: 3.5rem;
+  }
+
+  .feature p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  /* *** How it works *** */
+
+  .step {
+    margin: 25px 10%;
+    font-size: 1rem;
+  }
+
+  .number {
+    font-size: 1rem;
+    padding: 10px 16px 10px 10px;
+    width: 20px;
+  }
+
+  /* *** Testimonies *** */
+
+  .yt-reviews {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .yt-video {
+    width: 280px;
+    height: 157.5px;
+  }
+
+  /* *** Plans *** */
+
+  .wrapper-plans {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan {
+    width: 60%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .plan h3 {
+    text-align: center;
+  }
+
+  .plan-details {
+    margin: 20px 0 80px;
+    padding: 15px 5px;
+  }
+
+  .price {
+    font-size: 2rem;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .small-text {
+    font-size: 1rem;
+  }
+
+  .plan .btn {
+    font-size: 1rem;
+    bottom: 1%;
+    margin-bottom: 20px;
+  }
+
+  /* *** Creat an account *** */
+
+  #form {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  .name,
+  .email,
+  .phone,
+  .occupation,
+  .password,
+  .submit {
+    margin: 15px auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+    width: 100%;
+    font-size: 1rem;
+    height: 2.2rem;
+    text-indent: 10px;
+  }
+
+  #occupation {
+    width: 100%;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    text-indent: 5px;
+  }
+
+  #submit {
+    width: 70%;
+    margin: 0 15%;
+    font-size: 0.9rem;
+  }
+
+  .newsletter label,
+  .terms label {
+    font-size: 0.7rem;
+  }
+
+  /* *** Footer *** */
+
+  footer {
+    padding: 5px 0;
+  }
+
+  .footer-nav {
+    margin-left: 5%;
+  }
+
+  .social-media {
+    margin-right: 5%;
+  }
+
+  .footer-nav a,
+  .social-media a {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media i {
+    display: none;
+  }
+}

@@ -10,8 +10,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
         rel="stylesheet">
     <!-- ********** CSS ********** -->
-    <link rel="stylesheet" href="vendors/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/media-queries.css">
 </head>
 
 <body>
@@ -22,15 +23,15 @@
         <div class="logo-nav">
             <!-- *** Logo *** -->
             <div class="logo">
-                <img src="resources/images/fashion-trends-logo.png" alt="Logo" id="logo">
+                <img src="resources/images/fashionlogo1.png" alt="Logo" id="logo">
             </div>
 
             <!-- *** Navigation *** -->
             <nav id="nav-bar">
-                <a href="#features" id="nav-link">Features</a>
-                <a href="#testimonies" id="nav-link">Testimonies</a>
-                <a href="#plans" id="nav-link">Plans</a>
-                <a href="#sign-up" id="nav-link">Sign Up</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#testimonies" class="nav-link">Testimonies</a>
+                <a href="#plans" class="nav-link">Plans</a>
+                <a href="#sign-up" class="nav-link">Sign Up</a>
             </nav>
         </div>
 
@@ -116,9 +117,11 @@
         <!-- *** Testimonies *** -->
         <section class="section section-testimonies" id="testimonies">
             <h2 class="section-heading">What customers say about us</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/baqA9jhZRVs" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                class="yt-video" id="video"></iframe>
+            <div class="yt-reviews">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/baqA9jhZRVs" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    class="yt-video" id="video"></iframe>
+            </div>
         </section>
 
         <!-- *** Plans *** -->
@@ -216,7 +219,8 @@
 
                 <div class="terms">
                     <input type="checkbox" name="terms" id="terms" required>
-                    <label for="terms">I accept the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.</label>
+                    <label for="terms">I accept the <a href="">Terms of Use</a> and <a href="">Privacy
+                            Policy</a>.</label>
                 </div>
 
             </form>
@@ -232,10 +236,10 @@
 
 <footer>
     <div class="footer-nav">
-        <a href="#features" id="nav-link">Features</a>
-        <a href="#testimonies" id="nav-link">Testimonies</a>
-        <a href="#plans" id="nav-link">Plans</a>
-        <a href="#sign-up" id="nav-link">Sign Up</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#testimonies" class="nav-link">Testimonies</a>
+        <a href="#plans" class="nav-link">Plans</a>
+        <a href="#sign-up" class="nav-link">Sign Up</a>
     </div>
 
     <div class="social-media">
